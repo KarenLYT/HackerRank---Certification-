@@ -1,0 +1,5 @@
+SELECT s. roll_number, s.name
+  FROM student_information s
+ INNER JOIN examination_marks e
+    ON s.roll_number = e.roll_number
+ WHERE (subject_one + subject_two + subject_three) < 100
